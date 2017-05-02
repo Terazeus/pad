@@ -14,7 +14,7 @@ public class MovePiece : MonoBehaviour {
 
     public string checkPlacement = "";
 
-    
+    public float yDiff;
 
     public Vector2 invPos;
 
@@ -23,15 +23,18 @@ public class MovePiece : MonoBehaviour {
 
     public Sprite PeopleImage1;
     public Sprite PeopleImage2;
-    public Sprite PeopleImage3;
-    public Sprite PeopleImage4;
-    public Sprite PeopleImage5;
-    
+
     public Sprite SeasonsImage1;
     public Sprite SeasonsImage2;
     public Sprite SeasonsImage3;
     public Sprite SeasonsImage4;
     public Sprite SeasonsImage5;
+    public Sprite SeasonsImage6;
+    public Sprite SeasonsImage7;
+    public Sprite SeasonsImage8;
+    public Sprite SeasonsImage9;
+    public Sprite SeasonsImage10;
+
 
     public Sprite CarsImage1;
     public Sprite CarsImage2;
@@ -89,21 +92,6 @@ public class MovePiece : MonoBehaviour {
             GetComponent<SpriteRenderer>().sprite = PeopleImage2;
         }
 
-        else if (MenuNavigation.PeopleLevel == 3)
-        {
-            GetComponent<SpriteRenderer>().sprite = PeopleImage3;
-        }
-
-        else if (MenuNavigation.PeopleLevel == 4)
-        {
-            GetComponent<SpriteRenderer>().sprite = PeopleImage4;
-        }
-
-        else if (MenuNavigation.PeopleLevel == 5)
-        {
-            GetComponent<SpriteRenderer>().sprite = PeopleImage5;
-        }
-
         if (MenuNavigation.SeasonLevel == 1)
         {
             GetComponent<SpriteRenderer>().sprite = SeasonsImage1;
@@ -147,15 +135,210 @@ public class MovePiece : MonoBehaviour {
 
          //RANDOMIZEN PUZZELSTUKJES OP HET HOUTEN BORD
 
-      /*  if (gameObject.name == "A1") {
+
+
+       if (gameObject.name == "A1") {
             x = Random.Range(-9, -5);
-            y = Random.Range(5, -3);
+            y = Random.Range(5, -7);
             pos = new Vector2(x, y);
             transform.position = pos;
-        } */
+        }
+
+        if (gameObject.name == "A2")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "A3")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "A4")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
 
 
+        if (gameObject.name == "A5")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+        
+        if (gameObject.name == "B1")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
 
+        if (gameObject.name == "B2")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "B3")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "B4")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "B5")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "C1")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "C2")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "C3")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "C4")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "C5")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "D1")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "D2")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "D3")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "D4")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "D5")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "E1")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "E2")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "E3")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "E4")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "E5")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+        
+
+        
     }
 	
 	// Update is called once per frame
@@ -233,5 +416,185 @@ public class MovePiece : MonoBehaviour {
         invPos = transform.position;
     }
 
+ 
+        void OnCollisionEnter2D(Collision2D coll)
+        {
+        if (coll.gameObject.name == "A1")
+        {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+       if (coll.gameObject.name == "A2")
+       {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+       if (coll.gameObject.name == "A3")
+       {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+       if (coll.gameObject.name == "A4")
+       {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+       if (coll.gameObject.name == "A5")
+       {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+       if (coll.gameObject.name == "B1")
+       {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+       if (coll.gameObject.name == "B2")
+       {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+       if (coll.gameObject.name == "B3")
+       {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+       if (coll.gameObject.name == "B4")
+       {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+       if (coll.gameObject.name == "B5")
+       {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+        if (coll.gameObject.name == "C1")
+        {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+        if (coll.gameObject.name == "C2")
+        {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+        if (coll.gameObject.name == "C3")
+        {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+        if (coll.gameObject.name == "C4")
+        {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+        if (coll.gameObject.name == "C5")
+        {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+        if (coll.gameObject.name == "D1")
+        {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+        if (coll.gameObject.name == "D2")
+        {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+        if (coll.gameObject.name == "D3")
+        {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+        if (coll.gameObject.name == "D4")
+        {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+        if (coll.gameObject.name == "D5")
+        {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+        if (coll.gameObject.name == "E1")
+        {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+        if (coll.gameObject.name == "E2")
+        {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+        if (coll.gameObject.name == "E3")
+        {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+        if (coll.gameObject.name == "E4")
+        {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+        if (coll.gameObject.name == "E5")
+        {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+    }
+
+
+
+
+    /* void invControl() {
+         //als je omhoog scrollt
+         if ((Input.GetAxis("Mouse ScrollWheel") > 0) && (pieceStatus != "locked")) {
+             transform.position = new Vector2(-11, transform.position.y - 3);
+             yDiff -= 3;
+         }
+         //als je omlaag scrollt
+         if ((Input.GetAxis("Mouse ScrollWheel") < 0) && (pieceStatus != "locked"))
+         {
+             transform.position = new Vector2(-11, transform.position.y + 3);
+             yDiff += 3;
+         }
+
+         if ((Input.GetKeyDown (returntoinv)) && (pieceStatus == "pickedup"))
+         {
+             transform.position = new Vector2(-11, invPos.y + yDiff);
+
+             //Veranderd de grootte weer naar klein-formaat als je hem terugzet
+             gameObject.transform.localScale = new Vector3(0.5f, 0.5f, 0);
+
+             pieceStatus = ""; 
+         }
+     } */
 
 }
