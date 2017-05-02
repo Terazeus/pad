@@ -135,13 +135,210 @@ public class MovePiece : MonoBehaviour {
 
          //RANDOMIZEN PUZZELSTUKJES OP HET HOUTEN BORD
 
-       /* if (gameObject.name == "A1") {
+
+
+       if (gameObject.name == "A1") {
             x = Random.Range(-9, -5);
-            y = Random.Range(5, -3);
+            y = Random.Range(5, -7);
             pos = new Vector2(x, y);
             transform.position = pos;
-        } */
+        }
 
+        if (gameObject.name == "A2")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "A3")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "A4")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+
+        if (gameObject.name == "A5")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+        
+        if (gameObject.name == "B1")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "B2")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "B3")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "B4")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "B5")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "C1")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "C2")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "C3")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "C4")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "C5")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "D1")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "D2")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "D3")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "D4")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "D5")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "E1")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "E2")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "E3")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "E4")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+
+        if (gameObject.name == "E5")
+        {
+            x = Random.Range(-9, -5);
+            y = Random.Range(5, -7);
+            pos = new Vector2(x, y);
+            transform.position = pos;
+        }
+        
+
+        
     }
 	
 	// Update is called once per frame
@@ -219,28 +416,185 @@ public class MovePiece : MonoBehaviour {
         invPos = transform.position;
     }
 
-   /* void invControl() {
-        //als je omhoog scrollt
-        if ((Input.GetAxis("Mouse ScrollWheel") > 0) && (pieceStatus != "locked")) {
-            transform.position = new Vector2(-11, transform.position.y - 3);
-            yDiff -= 3;
-        }
-        //als je omlaag scrollt
-        if ((Input.GetAxis("Mouse ScrollWheel") < 0) && (pieceStatus != "locked"))
+ 
+        void OnCollisionEnter2D(Collision2D coll)
         {
-            transform.position = new Vector2(-11, transform.position.y + 3);
-            yDiff += 3;
-        }
-
-        if ((Input.GetKeyDown (returntoinv)) && (pieceStatus == "pickedup"))
+        if (coll.gameObject.name == "A1")
         {
-            transform.position = new Vector2(-11, invPos.y + yDiff);
-
-            //Veranderd de grootte weer naar klein-formaat als je hem terugzet
-            gameObject.transform.localScale = new Vector3(0.5f, 0.5f, 0);
-
-            pieceStatus = ""; 
+            pos.x = (x + 2);
+            pos.y = (y + 2);
         }
-    } */
+
+       if (coll.gameObject.name == "A2")
+       {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+       if (coll.gameObject.name == "A3")
+       {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+       if (coll.gameObject.name == "A4")
+       {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+       if (coll.gameObject.name == "A5")
+       {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+       if (coll.gameObject.name == "B1")
+       {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+       if (coll.gameObject.name == "B2")
+       {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+       if (coll.gameObject.name == "B3")
+       {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+       if (coll.gameObject.name == "B4")
+       {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+       if (coll.gameObject.name == "B5")
+       {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+        if (coll.gameObject.name == "C1")
+        {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+        if (coll.gameObject.name == "C2")
+        {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+        if (coll.gameObject.name == "C3")
+        {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+        if (coll.gameObject.name == "C4")
+        {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+        if (coll.gameObject.name == "C5")
+        {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+        if (coll.gameObject.name == "D1")
+        {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+        if (coll.gameObject.name == "D2")
+        {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+        if (coll.gameObject.name == "D3")
+        {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+        if (coll.gameObject.name == "D4")
+        {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+        if (coll.gameObject.name == "D5")
+        {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+        if (coll.gameObject.name == "E1")
+        {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+        if (coll.gameObject.name == "E2")
+        {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+        if (coll.gameObject.name == "E3")
+        {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+        if (coll.gameObject.name == "E4")
+        {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+
+        if (coll.gameObject.name == "E5")
+        {
+            pos.x = (x + 2);
+            pos.y = (y + 2);
+        }
+    }
+
+
+
+
+    /* void invControl() {
+         //als je omhoog scrollt
+         if ((Input.GetAxis("Mouse ScrollWheel") > 0) && (pieceStatus != "locked")) {
+             transform.position = new Vector2(-11, transform.position.y - 3);
+             yDiff -= 3;
+         }
+         //als je omlaag scrollt
+         if ((Input.GetAxis("Mouse ScrollWheel") < 0) && (pieceStatus != "locked"))
+         {
+             transform.position = new Vector2(-11, transform.position.y + 3);
+             yDiff += 3;
+         }
+
+         if ((Input.GetKeyDown (returntoinv)) && (pieceStatus == "pickedup"))
+         {
+             transform.position = new Vector2(-11, invPos.y + yDiff);
+
+             //Veranderd de grootte weer naar klein-formaat als je hem terugzet
+             gameObject.transform.localScale = new Vector3(0.5f, 0.5f, 0);
+
+             pieceStatus = ""; 
+         }
+     } */
 
 }
