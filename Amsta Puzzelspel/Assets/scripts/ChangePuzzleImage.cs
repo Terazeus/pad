@@ -5,27 +5,11 @@ using UnityEngine;
 public class ChangePuzzleImage : MonoBehaviour {
 
     // voor de eindfoto rechts in beeld
-    public Sprite PeopleImage1Full;
-    public Sprite PeopleImage2Full;
+    public Sprite PeopleImage1Full, PeopleImage2Full, PeopleImage3Full, PeopleImage4Full, PeopleImage5Full;
+    public Sprite SeasonImage1Full, SeasonImage2Full, SeasonImage3Full, SeasonImage4Full, SeasonImage5Full;
+    public Sprite CarImage1Full, CarImage2Full, CarImage3Full, CarImage4Full, CarImage5Full;
 
-    public Sprite SeasonImage1Full;
-    public Sprite SeasonImage2Full;
-    public Sprite SeasonImage3Full;
-    public Sprite SeasonImage4Full;
-    public Sprite SeasonImage5Full;
-    public Sprite SeasonImage6Full;
-    public Sprite SeasonImage7Full;
-    public Sprite SeasonImage8Full;
-    public Sprite SeasonImage9Full;
-    public Sprite SeasonImage10Full;
 
-    public Sprite CarImage1Full;
-    public Sprite CarImage2Full;
-    public Sprite CarImage3Full;
-    public Sprite CarImage4Full;
-    public Sprite CarImage5Full;
-
-    // Use this for initialization
 
     // veranderd de volledige foto naar de correcte foto ( de foto die rechts staat )
     // misschien handiger in arraylist
@@ -38,6 +22,21 @@ public class ChangePuzzleImage : MonoBehaviour {
         else if (MenuNavigation.PeopleImageFull == 2)
         {
             GetComponent<SpriteRenderer>().sprite = PeopleImage2Full;
+        }
+
+        else if (MenuNavigation.PeopleImageFull == 3)
+        {
+            GetComponent<SpriteRenderer>().sprite = PeopleImage3Full;
+        }
+
+        else if (MenuNavigation.PeopleImageFull == 4)
+        {
+            GetComponent<SpriteRenderer>().sprite = PeopleImage4Full;
+        }
+
+        else if (MenuNavigation.PeopleImageFull == 5)
+        {
+            GetComponent<SpriteRenderer>().sprite = PeopleImage5Full;
         }
 
         else if (MenuNavigation.SeasonImageFull == 1)
@@ -63,31 +62,6 @@ public class ChangePuzzleImage : MonoBehaviour {
         else if (MenuNavigation.SeasonImageFull == 5)
         {
             GetComponent<SpriteRenderer>().sprite = SeasonImage5Full;
-        }
-
-        else if (MenuNavigation.SeasonImageFull == 6)
-        {
-            GetComponent<SpriteRenderer>().sprite = SeasonImage6Full;
-        }
-
-        else if (MenuNavigation.SeasonImageFull == 7)
-        {
-            GetComponent<SpriteRenderer>().sprite = SeasonImage7Full;
-        }
-
-        else if (MenuNavigation.SeasonImageFull == 8)
-        {
-            GetComponent<SpriteRenderer>().sprite = SeasonImage8Full;
-        }
-
-        else if (MenuNavigation.SeasonImageFull == 9)
-        {
-            GetComponent<SpriteRenderer>().sprite = SeasonImage9Full;
-        }
-
-        else if (MenuNavigation.SeasonImageFull == 10)
-        {
-            GetComponent<SpriteRenderer>().sprite = SeasonImage10Full;
         }
 
         else if (MenuNavigation.CarImageFull == 1)

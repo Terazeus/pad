@@ -83,6 +83,30 @@ public class MenuNavigation : MonoBehaviour {
             
         }
 
+        else if (gameObject.name == "People 3")
+        {
+            PeopleLevel = 3;
+            PeopleImageFull = 3;
+            SceneManager.LoadScene("DifficultySelect");
+
+        }
+
+        else if (gameObject.name == "People 4")
+        {
+            PeopleLevel = 4;
+            PeopleImageFull = 4;
+            SceneManager.LoadScene("DifficultySelect");
+
+        }
+
+        else if (gameObject.name == "People 5")
+        {
+            PeopleLevel = 5;
+            PeopleImageFull = 5;
+            SceneManager.LoadScene("DifficultySelect");
+
+        }
+
         if (gameObject.name == "Seasons 1")
         {
           
