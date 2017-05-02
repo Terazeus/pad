@@ -36,6 +36,15 @@ public class MenuNavigation : MonoBehaviour {
             SceneManager.LoadScene("MainMenu");
         }
 
+        if (gameObject.name == "btn_Instellingen")
+        {
+            SceneManager.LoadScene("OptionsMenu");
+        }
+        if (gameObject.name == "btn_terug")
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
+
         if (gameObject.name == "btn_PuzzelMaken")
         {
             SceneManager.LoadScene("UserSelect");
