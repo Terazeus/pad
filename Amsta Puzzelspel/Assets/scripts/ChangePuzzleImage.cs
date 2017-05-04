@@ -8,7 +8,8 @@ public class ChangePuzzleImage : MonoBehaviour {
     public Sprite PeopleImage1Full, PeopleImage2Full, PeopleImage3Full, PeopleImage4Full, PeopleImage5Full;
     public Sprite SeasonImage1Full, SeasonImage2Full, SeasonImage3Full, SeasonImage4Full, SeasonImage5Full;
     public Sprite CarImage1Full, CarImage2Full, CarImage3Full, CarImage4Full, CarImage5Full;
-
+    public Sprite SportImage1Full, SportImage2Full, SportImage3Full, SportImage4Full, SportImage5Full;
+    public Sprite AnimalImage1Full, AnimalImage2Full, AnimalImage3Full, AnimalImage4Full, AnimalImage5Full;
 
 
     // veranderd de volledige foto naar de correcte foto ( de foto die rechts staat )
@@ -90,11 +91,63 @@ public class ChangePuzzleImage : MonoBehaviour {
             GetComponent<SpriteRenderer>().sprite = CarImage5Full;
         }
 
+        else if (MenuNavigation.SportImageFull == 1)
+        {
+            GetComponent<SpriteRenderer>().sprite = SportImage1Full;
+        }
+
+        else if (MenuNavigation.SportImageFull == 2)
+        {
+            GetComponent<SpriteRenderer>().sprite = SportImage2Full;
+        }
+
+        else if (MenuNavigation.SportImageFull == 3)
+        {
+            GetComponent<SpriteRenderer>().sprite = SportImage3Full;
+        }
+
+        else if (MenuNavigation.SportImageFull == 4)
+        {
+            GetComponent<SpriteRenderer>().sprite = SportImage4Full;
+        }
+
+        else if (MenuNavigation.SportImageFull == 5)
+        {
+            GetComponent<SpriteRenderer>().sprite = SportImage5Full;
+        }
+
+        else if (MenuNavigation.AnimalImageFull == 1)
+        {
+            GetComponent<SpriteRenderer>().sprite = AnimalImage1Full;
+        }
+
+        else if (MenuNavigation.AnimalImageFull == 2)
+        {
+            GetComponent<SpriteRenderer>().sprite = AnimalImage2Full;
+        }
+
+        else if (MenuNavigation.AnimalImageFull == 3)
+        {
+            GetComponent<SpriteRenderer>().sprite = AnimalImage3Full;
+        }
+
+        else if (MenuNavigation.AnimalImageFull == 4)
+        {
+            GetComponent<SpriteRenderer>().sprite = AnimalImage4Full;
+        }
+
+        else if (MenuNavigation.AnimalImageFull == 5)
+        {
+            GetComponent<SpriteRenderer>().sprite = AnimalImage5Full;
+        }
+
         MenuNavigation.PeopleImageFull = 0;
         MenuNavigation.CarImageFull = 0;
         MenuNavigation.SeasonImageFull = 0;
+        MenuNavigation.SportImageFull = 0;
+        MenuNavigation.AnimalImageFull = 0;
 
-  
+
     }
 	
 	// Update is called once per frame
