@@ -230,6 +230,42 @@ public class MenuNavigation : MonoBehaviour {
             SceneManager.LoadScene("DifficultySelect");
         }
 
+        if (gameObject.name == "Animals 1")
+        {
+            AnimalLevel = 1;
+            AnimalImageFull = 1;
+            SceneManager.LoadScene("DifficultySelect");
+        }
+
+        if (gameObject.name == "Animals 2")
+        {
+            AnimalLevel = 2;
+            AnimalImageFull = 2;
+            SceneManager.LoadScene("DifficultySelect");
+        }
+
+        if (gameObject.name == "Animals 3")
+        {
+            AnimalLevel = 3;
+            AnimalImageFull = 3;
+            SceneManager.LoadScene("DifficultySelect");
+        }
+
+        if (gameObject.name == "Animals 4")
+        {
+            AnimalLevel = 4;
+            AnimalImageFull = 4;
+            SceneManager.LoadScene("DifficultySelect");
+        }
+
+        if (gameObject.name == "Animals 5")
+        {
+            AnimalLevel = 5;
+            AnimalImageFull = 5;
+            SceneManager.LoadScene("DifficultySelect");
+        }
+
+
         // gaat naar het juiste scherm van de gekozen categorie
 
         if (gameObject.name == "btn_People") {
