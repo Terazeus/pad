@@ -20,9 +20,7 @@ public class MovePiece : MonoBehaviour {
 
     public float edgeRadius;
 
-    public Rigidbody2D attachedRigidbody;
-
-
+    
     // voor de puzzelstukjes in de goede categorie
     //public Sprite stage2Image;
 
@@ -82,7 +80,7 @@ public class MovePiece : MonoBehaviour {
 
         if (sceneName == "EasyPuzzleLevel")
         {
-            GameMaster.remainingPieces = 1;
+            GameMaster.remainingPieces = 9;
 
         }
         else if (sceneName == "MediumPuzzleLevel")
@@ -254,7 +252,7 @@ public class MovePiece : MonoBehaviour {
             y = Random.Range(5, -7);
             pos = new Vector2(x, y);
             transform.position = pos;
-            edgeRadius = 2;
+            
         }
 
         if (gameObject.name == "A4")
@@ -263,7 +261,7 @@ public class MovePiece : MonoBehaviour {
             y = Random.Range(5, -7);
             pos = new Vector2(x, y);
             transform.position = pos;
-            edgeRadius = 2;
+            
         }
 
 
@@ -273,10 +271,10 @@ public class MovePiece : MonoBehaviour {
             y = Random.Range(5, -7);
             pos = new Vector2(x, y);
             transform.position = pos;
-            edgeRadius = 2;
+            
         }
         
-        if (gameObject.name == "B1")
+       if (gameObject.name == "B1")
         {
             x = Random.Range(-9, -5);
             y = Random.Range(5, -7);
@@ -455,6 +453,8 @@ public class MovePiece : MonoBehaviour {
             Vector2 objPosition = Camera.main.ScreenToWorldPoint(mousePosition);
             //wordt aan object toegevoegd
             transform.position = objPosition;
+
+            GetComponent<PolygonCollider2D>().enabled = false;
         }
 
         if ((Input.GetKeyDown(placePiece)) && (pieceStatus == "pickedup"))
@@ -474,6 +474,7 @@ public class MovePiece : MonoBehaviour {
         {
             other.GetComponent<BoxCollider2D>().enabled = false;
             GetComponent<BoxCollider2D>().enabled = false;
+            GetComponent<PolygonCollider2D>().enabled = false;
             GetComponent<Renderer>().sortingOrder = 0;
             transform.position = other.gameObject.transform.position;
             pieceStatus = "locked";
@@ -516,167 +517,12 @@ public class MovePiece : MonoBehaviour {
     }
 
 
-    void OnCollisionEnter2D(Collision2D coll)
-    {
-
-        if (coll.gameObject.name == "A1")
-        {
-
-            pos.x = (x + 2);
-            pos.y = (y + 2);
-
-        }
-
-        if (coll.gameObject.name == "A2")
-        {
-            pos.x = (x + 2);
-            pos.y = (y + 2);
-        }
-
-        if (coll.gameObject.name == "A3")
-        {
-            pos.x = (x + 2);
-            pos.y = (y + 2);
-        }
-
-        if (coll.gameObject.name == "A4")
-        {
-            pos.x = (x + 2);
-            pos.y = (y + 2);
-        }
-
-        if (coll.gameObject.name == "A5")
-        {
-            pos.x = (x + 2);
-            pos.y = (y + 2);
-        }
-
-        /* if (coll.gameObject.name == "B1")
-         {
-              pos.x = (x + 2);
-              pos.y = (y + 2);
-          }
-
-         if (coll.gameObject.name == "B2")
-         {
-              pos.x = (x + 2);
-              pos.y = (y + 2);
-          }
-
-         if (coll.gameObject.name == "B3")
-         {
-              pos.x = (x + 2);
-              pos.y = (y + 2);
-          }
-
-         if (coll.gameObject.name == "B4")
-         {
-              pos.x = (x + 2);
-              pos.y = (y + 2);
-          }
-
-         if (coll.gameObject.name == "B5")
-         {
-              pos.x = (x + 2);
-              pos.y = (y + 2);
-          }
-
-          if (coll.gameObject.name == "C1")
-          {
-              pos.x = (x + 2);
-              pos.y = (y + 2);
-          }
-
-          if (coll.gameObject.name == "C2")
-          {
-              pos.x = (x + 2);
-              pos.y = (y + 2);
-          }
-
-          if (coll.gameObject.name == "C3")
-          {
-              pos.x = (x + 2);
-              pos.y = (y + 2);
-          }
-
-          if (coll.gameObject.name == "C4")
-          {
-              pos.x = (x + 2);
-              pos.y = (y + 2);
-          }
-
-          if (coll.gameObject.name == "C5")
-          {
-              pos.x = (x + 2);
-              pos.y = (y + 2);
-          }
-
-          if (coll.gameObject.name == "D1")
-          {
-              pos.x = (x + 2);
-              pos.y = (y + 2);
-          }
-
-          if (coll.gameObject.name == "D2")
-          {
-              pos.x = (x + 2);
-              pos.y = (y + 2);
-          }
-
-          if (coll.gameObject.name == "D3")
-          {
-              pos.x = (x + 2);
-              pos.y = (y + 2);
-          }
-
-          if (coll.gameObject.name == "D4")
-          {
-              pos.x = (x + 2);
-              pos.y = (y + 2);
-          }
-
-          if (coll.gameObject.name == "D5")
-          {
-              pos.x = (x + 2);
-              pos.y = (y + 2);
-          }
-
-          if (coll.gameObject.name == "E1")
-          {
-              pos.x = (x + 2);
-              pos.y = (y + 2);
-          }
-
-          if (coll.gameObject.name == "E2")
-          {
-              pos.x = (x + 2);
-              pos.y = (y + 2);
-          }
-
-          if (coll.gameObject.name == "E3")
-          {
-              pos.x = (x + 2);
-              pos.y = (y + 2);
-          }
-
-          if (coll.gameObject.name == "E4")
-          {
-              pos.x = (x + 2);
-              pos.y = (y + 2);
-          }
-
-          if (coll.gameObject.name == "E5")
-          {
-              pos.x = (x + 2);
-              pos.y = (y + 2);
-          }
-
-      }
 
 
 
 
-      /* void invControl() {
+
+      /*void invControl() {
            //als je omhoog scrollt
            if ((Input.GetAxis("Mouse ScrollWheel") > 0) && (pieceStatus != "locked")) {
                transform.position = new Vector2(-11, transform.position.y - 3);
@@ -698,6 +544,7 @@ public class MovePiece : MonoBehaviour {
 
                pieceStatus = ""; 
            }
-       } */
-    }
+           
+       } 
+    }*/
 }
